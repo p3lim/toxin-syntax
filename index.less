@@ -1,0 +1,101 @@
+.editor {
+	color: #eee;
+	background-color: #2a2f31;
+
+	.wrap-guide,
+	.indent-guide,
+	.invisible-character {
+		color: #3b3a32;
+	}
+
+	.gutter .line-number.cursor-line {
+		background-color: #353b3e;
+	}
+
+	.selection .region {
+		background-color: #75a1a4;
+	}
+}
+
+.comment {
+	color: #4a5356;
+}
+
+.constant {
+	&.numeric {
+		color: #8ec4dd;
+	}
+
+	&.language,
+	&.character,
+	&.other {
+		color: #b8cd44;
+	}
+}
+
+.entity {
+	&.name.function {
+		color: #fd9f59;
+	}
+
+	&.name.class {
+		color: #b8cd44;
+	}
+
+	&.name.tag {
+		color: #75a1a4;
+	}
+
+	&.other.attribute-name {
+		color: #fd9f59;
+
+		&.pseudo-element {
+			color: #b8cd44;
+		}
+	}
+
+	&.other.inherited-class {
+		color: #b8cd44;
+	}
+}
+
+.keyword {
+	color: #ef6e44;
+}
+
+.markup {
+	&.changed {
+		color: #e6db74;
+	}
+
+	&.deleted {
+		color: #00a8c6;
+	}
+
+	&.inserted {
+		color: #a6e22e;
+	}
+}
+
+.storage {
+	color: #7a9b9e;
+}
+
+.string {
+	color: #8ec4dd;
+}
+
+.support {
+	&.function,
+	&.constant,
+	&.type,
+	&.class {
+		color: #b8cd44;
+	}
+}
+
+// for git diff info. i.e. in the gutter
+@syntax-color-renamed: #96cbfe;
+@syntax-color-added: #a8ff60;
+@syntax-color-modified: #e9c062;
+@syntax-color-removed: #cc6666;
