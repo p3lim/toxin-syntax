@@ -6,6 +6,6 @@
   "repository": "https://github.com/p3lim/toxin-syntax",
   "license": "MIT",
   "engines": {
-    "atom": ">0.50.0"
+    "atom": ">0.181.0"
   }
 }
